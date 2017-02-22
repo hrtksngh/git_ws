@@ -1,0 +1,20 @@
+sc_635_world folder in home directory
+run_sc635_sim.sh in home also
+
+follow catkin workspace creation (step 3 on http://wiki.ros.org/ROS/Tutorials/InstallingandConfiguringROSEnvironment) assuming ROS is installed
+
+after doing catkin_make
+paste the package folder sbot_controller in the home/catkin_ws/src folder
+
+
+to run stuff run the commands in a terminal:
+$ cd ~/ 
+$ sudo ./run_sc635_sim.sh 
+
+in a new terminal window
+to run the controller node, run the following:
+
+$ cd ~/catkin_ws
+$ source devel/setup.bash
+$ rosrun sbot_controller controller.py
+
